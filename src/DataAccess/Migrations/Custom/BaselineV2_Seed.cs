@@ -300,7 +300,7 @@ EXEC(N'
        END  
      IF (@subscriptionStatus= ''Unsubscribed'')  
         BEGIN  
-      set @welcomeText= ''A subscription with the following details was deleted from Azure.''  
+      set @welcomeText= ''A subscription with the following details was deleted from Microsoft 365 admin center.''  
        END   
          set @html = (SELECT TemplateBody FROM EmailTemplate WHERE Status = @subscriptionStatus)
     END  

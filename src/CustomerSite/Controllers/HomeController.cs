@@ -554,8 +554,9 @@ public class HomeController : BaseController
     {
         var downloads = new Dictionary<string, string>
         {
-            { "Raft WSL Enterprise Installer", "RaftWSLEnterprise_25.0.0.1_x64.msixbundle" },
-            { "Pengwin Enterprise Installer", "PengwinEnterprise9_9.5.0.0_x64.msixbundle" }
+            { "Raft WSL Enterprise Installer", "RaftWSLEnterprise_x64.msixbundle" },
+            { "Pengwin Enterprise Installer", "PengwinEnterprise9_x64.msixbundle" },
+            { "Dependences for Intune deployment", "Dependences.zip" }
         };
 
         List<DownloadItem> list = downloads.Select(d => new DownloadItem

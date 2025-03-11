@@ -41,7 +41,9 @@
                                             <td class="text-left">
                                                 @Html.HiddenFor(s => s.Subscriptions[i].Id)
                                                 @Html.HiddenFor(s => s.Subscriptions[i].PlanId)
-                                                @subscription.Name
+                                                <a class="dropdown-item cm-dropdown-option" asp-controller="Home" asp-action="SubscriptionDetails" asp-route-subscriptionId="@Model.Subscriptions[i].Id">
+                                                    @subscription.Name
+                                                </a>
                                             </td>
                                             <td class="text-left">@subscription.OfferId</td>
                                             <td class="text-left">@subscription.PlanId</td>
